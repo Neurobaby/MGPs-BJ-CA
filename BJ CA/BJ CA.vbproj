@@ -1,0 +1,303 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C4D3154-9016-4790-BDA5-FD96D2847DB2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>BJCA.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>BJ CA</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>BJ_CA</RootNamespace>
+    <StartupObject>BJ_CA.BJCAMainForm</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BJ CA.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BJ CA.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAAboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BJCABonusRulesClasses.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAColorTableClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCADealerProbsClasses.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCADoubleTableClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAEORsClasses.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAExceptionClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAFileSetClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAForcedRuleClasses.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAFormRulesClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAGeneralRulesClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAGlobalsClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAHandClasses.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BJCARealtimeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BJCARenameForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BJCAResultsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BJCARulesClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAShared.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BJCAShoeClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCASmallRealTimeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BJCASplitClasses.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCAStrategyClasses.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BJCATextForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="BJCA.ico" />
+    <EmbeddedResource Include="BJCAAboutForm.resx">
+      <DependentUpon>BJCAAboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BJCAMainForm.resx">
+      <DependentUpon>BJCAMainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BJCARealtimeForm.resx">
+      <DependentUpon>BJCARealtimeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BJCARenameForm.resx">
+      <DependentUpon>BJCARenameForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BJCAResultsForm.resx">
+      <DependentUpon>BJCAResultsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BJCASmallRealTimeForm.resx">
+      <DependentUpon>BJCASmallRealTimeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BJCATextForm.resx">
+      <DependentUpon>BJCATextForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ManualNotes.vb">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="TempStorage.vb">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="ToDoList.vb">
+      <SubType>Code</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

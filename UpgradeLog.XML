@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="BJ CA">
+</Property><Property Name="Solution File" Value="C:\Users\Anon\Documents\VB.Net Projects\BJ CA\BJ CA.sln">
+</Property><Property Name="Date" Value="Thursday, March 18, 2010">
+</Property><Property Name="Time" Value="12:40 PM">
+</Property></Properties><Event ErrorLevel="0" Project="BJ CA" Source="BJ CA\BJ CA.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BJ CA" Source="BJ CA\BJ CA.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="BJ CA.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="BJ CA.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BJ CA" Source="BJ CA\BJ CA.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

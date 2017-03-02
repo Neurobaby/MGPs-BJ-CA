@@ -1,0 +1,54 @@
+Features:
+
+OBO/ENHC/BB+1/Australian OBBO/Literal OBBO
+S17/H17
+Finite/Infinite Regular/Spanish/Custom Shoes
+
+DOA/D9/D10/Custom Doubles Allowed
+DAN
+DAS
+Double Soft as Hard (All or just 19)
+Double Down Rescue (Early/Late) (pre/post-split)
+Redoubling (pre/post-split)
+
+LS/ES/ES10/Custom
+Surrender value assignable
+SAN
+Surrender bonus vs BJ
+5 card surrender (2-10/A)
+Surrender after split
+
+Resplit/Hit/Double/Surrender split Aces
+BJ bonus after split (A/10)
+SPlit all pairs or cutsom pairs (e.g. no 4's in England)
+CDZ/CDP/CDPN composition split calculations
+
+Player 21 always wins including after double
+Custom Player-Dealer ties 17/18/19/20/21/BJ
+
+Custom BJ Pays
+Suited BJ Bonuses
+
+User Defined Bonuses based on:
+Generic Total/Specific Hands
+Upcard
+Suited
+Dealer BJ
+Always Wins/Must Win/and Continues
+Pre and Post Split
+
+Saveable Rule settings, strategies, bonuses
+Custom Color scheme
+
+TD/2C/CD/Custom (Forced) Strategies
+NCard Strategy Determination
+Hand/NCard/Suited Hands/Double in-depth analysis
+Hand/NCard Exceptions Analysis
+EORs (1 card/Custom n cards removed)
+EOR Hand/Hand Total analysis
+Split EVs
+
+Summary/Strategy/EOR values output to text box for easy copying
+Output results to Excel
+
+Real-time calculations including EV pre-hand, strategy play during hand, Insurance
