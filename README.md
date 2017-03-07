@@ -3,4 +3,6 @@ MGPs Blackjack Combinatorial Analysis.  Exact calculations including splits and 
 
 Help file: \BJCA\MGP BJ CA Help.pdf
 
+Executable in BJ CA\bin
+
 MGP
