@@ -6555,7 +6555,10 @@ Public Class BJCAMainForm
         For row = 0 To 17
             For column = 0 To 3
                 Try
-                    FormRules.DoubleTable.T(row, column) = DChecksArray(row, column).Checked
+                    ' Check if DChecksArray(row, column) is not null before accessing its properties
+                    If DChecksArray(row, column) IsNot Nothing Then
+                        FormRules.DoubleTable.T(row, column) = DChecksArray(row, column).Checked
+                    End If
                 Catch
                 End Try
             Next column
@@ -6569,7 +6572,10 @@ Public Class BJCAMainForm
         For row = 0 To 17
             For column = 0 To 3
                 Try
-                    DChecksArray(row, column).Checked = FormRules.DoubleTable.T(row, column)
+                    ' Check if DChecksArray(row, column) is not null before accessing its properties
+                    If DChecksArray(row, column) IsNot Nothing Then
+                        DChecksArray(row, column).Checked = FormRules.DoubleTable.T(row, column)
+                    End If
                 Catch
                 End Try
             Next column
