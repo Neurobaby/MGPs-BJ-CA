@@ -225,7 +225,9 @@
     <Compile Include="TestClass.vb">
       <SubType>Code</SubType>
     </Compile>
-    <Content Include="BJCA.ico" />
+    <Content Include="BJCA.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="app.config" />
     <None Include="Interop.Excel.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
