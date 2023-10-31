@@ -2,6 +2,7 @@ Imports System.Runtime.Serialization.Formatters.Binary
 Imports System.IO
 Imports BJ_CA.BJCAShared
 Imports System.Diagnostics.Process
+Imports System.Threading.Tasks
 
 Public Class BJCAMainForm
     Inherits System.Windows.Forms.Form
@@ -5281,24 +5282,26 @@ Public Class BJCAMainForm
 
 #Region " Main Form General Methods "
 
-    Private Sub CalculateNow()
-        Dim Results As New BJCA
-        Dim ResultsForm As New BJCAResultsForm
+    ' added multithreading to this method to prevent the main UI from being blocked and keep the application responsive
+    Private Async Sub CalculateNow()
+        Await Task.Run(Sub()
+                           Dim Results As New BJCA
+                           Dim ResultsForm As New BJCAResultsForm
 
-        '       Try
-        GetFormRules()
-        Results.BJCA(Rules)
+                           ' Perform time-consuming operations
+                           GetFormRules()
+                           Results.BJCA(Rules)
 
-        ResultsForm.FormRules.FileNames = FormRules.FileNames
-        ResultsForm.Results = Results
-        ResultsForm.FormRules = CloneObject(FormRules)
-        ResultsForm.LoadFormResults()
+                           ' UI-related operations need to be executed on the UI thread
+                           Me.Invoke(Sub()
+                                         ResultsForm.FormRules.FileNames = FormRules.FileNames
+                                         ResultsForm.Results = Results
+                                         ResultsForm.FormRules = CloneObject(FormRules)
+                                         ResultsForm.LoadFormResults()
 
-        ResultsForm.Show()
-        '        Catch
-        '        MsgBox("An error has occurred - please restart.")
-        '        Me.Close()
-        '        End Try
+                                         ResultsForm.Show()
+                                     End Sub)
+                       End Sub)
     End Sub
 
     Private Sub InitializeBJCAForm()

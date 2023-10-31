@@ -1,3 +1,4 @@
+Imports System.Threading.Tasks
 Imports BJ_CA.BJCAShared
 
 <Serializable()> Public Class BJCA
@@ -7826,32 +7827,36 @@ Imports BJ_CA.BJCAShared
 
 #Region " Output Methods "
 
-    Public Sub PrintToExcel()
-        Dim oexcel As New Excel.Application
-        Dim oexcelbook As Excel.Workbook
+    Public Async Sub PrintToExcel()
+        Await Task.Run(Sub()
+                           Dim oexcel As New Excel.Application
+                           Dim oexcelbook As Excel.Workbook
 
-        Try
-            oexcel = GetObject(, "Exel.Application")
-            Try
-                oexcelbook = oexcel.Workbooks(ExcelFilePath)
-            Catch
-                oexcelbook = oexcel.Workbooks.Open(ExcelFilePath)
-            End Try
-        Catch
-            oexcelbook = oexcel.Workbooks.Open(ExcelFilePath)
-        End Try
-        PrintStrategiesExcel(oexcelbook)
-        PrintSplitEVsExcel(oexcelbook)
-        PrintGameEVsExcel(oexcelbook)
-        PrintStrategyEVsExcel(oexcelbook)
-        PrintExceptionsExcel(oexcelbook)
-        PrintRulesExcel(oexcelbook)
+                           Try
+                               oexcel = GetObject(, "Exel.Application")
+                               Try
+                                   oexcelbook = oexcel.Workbooks(ExcelFilePath)
+                               Catch
+                                   oexcelbook = oexcel.Workbooks.Open(ExcelFilePath)
+                               End Try
+                           Catch
+                               oexcelbook = oexcel.Workbooks.Open(ExcelFilePath)
+                           End Try
 
-        oexcelbook.Worksheets("Strategy Table").Select()
+                           PrintStrategiesExcel(oexcelbook)
+                           PrintSplitEVsExcel(oexcelbook)
+                           PrintGameEVsExcel(oexcelbook)
+                           PrintStrategyEVsExcel(oexcelbook)
+                           PrintExceptionsExcel(oexcelbook)
+                           PrintRulesExcel(oexcelbook)
 
-        oexcel.Visible = True
-        oexcelbook = Nothing
-        oexcel = Nothing
+                           oexcelbook.Worksheets("Strategy Table").Select()
+
+                           oexcel.Visible = True
+                           oexcelbook = Nothing
+                           oexcel = Nothing
+
+                       End Sub)
     End Sub
 
     Private Sub PrintStrategiesExcel(ByVal workBook As Excel.Workbook)
