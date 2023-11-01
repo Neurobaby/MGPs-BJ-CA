@@ -1,0 +1,6 @@
+﻿<Project Sdk="WixToolset.Sdk/4.0.2">
+	<PropertyGroup>
+		<DebugSymbols>false</DebugSymbols>
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+</Project>
